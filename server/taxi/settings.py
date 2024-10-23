@@ -54,7 +54,7 @@ DATABASES = {
         'USER': os.getenv('PGUSER'),
         'PASSWORD': os.getenv('PGPASSWORD'),
         'HOST': os.getenv('PGHOST', 'localhost'),
-        'PORT': os.getenv('PGPORT', 5432),
+        'PORT': os.getenv('PGPORT', '5432'),
     }
 }
 
@@ -90,17 +90,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'taxi.wsgi.application'
 ASGI_APPLICATION = 'taxi.asgi.application' # Added by Gene
-
-
-# Database
-# https://docs.djangoproject.com/en/4.1/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
 
 
 # Password validation
