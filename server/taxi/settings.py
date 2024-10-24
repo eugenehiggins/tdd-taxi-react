@@ -13,8 +13,6 @@ import datetime
 from pathlib import Path
 import os # Added by Gene
 
-from wagtail.project_template.project_name.settings.base import DATABASES
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
